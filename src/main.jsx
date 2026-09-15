@@ -6,6 +6,7 @@ import { store } from "./redux/store";
 import { Provider } from "react-redux";
 import Counter from "./components/Counter";
 import DestinationList from "./components/DestinationList";
+import DestinationFact from "./components/DestinationFact";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Provider store={store}>
@@ -19,6 +20,7 @@ createRoot(document.getElementById("root")).render(
                 Destination List
               </h4>
               <DestinationList />
+              <DestinationFact />
             </div>
           </div>
         </main>
